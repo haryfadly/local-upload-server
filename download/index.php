@@ -35,7 +35,7 @@ SOFTWARE.
 	$color	= "light";
 	
 	// ADD SPECIFIC FILES YOU WANT TO IGNORE HERE
-	$ignore_file_list = array( ".htaccess", "Thumbs.db", ".DS_Store", "index.php" );
+	$ignore_file_list = array( ".htaccess", "Thumbs.db", ".DS_Store", "index.php", "README.md", "flat.png" );
 	
 	// ADD SPECIFIC FILE EXTENSIONS YOU WANT TO IGNORE HERE, EXAMPLE: array('psd','jpg','jpeg')
 	$ignore_ext_list = array( );
@@ -148,7 +148,7 @@ function display_size($bytes, $precision = 2)
 
 function count_dir_files( $dir)
 {
-	$fi = new FilesystemIterator(__DIR__ . "/master" . $dir, FilesystemIterator::SKIP_DOTS);
+	$fi = new FilesystemIterator(__DIR__ . "/" . $dir, FilesystemIterator::SKIP_DOTS);
 	return iterator_count($fi);
 }
 
@@ -319,6 +319,6 @@ build_blocks( $items, false );
 </script>
 <?php } ?>
 </div>
-<div style="padding: 10px 10px 40px 10px;"><a href="https://halgatewood.com/free/file-directory-list/">Free PHP File Directory Script</a> (<a href="https://github.com/halgatewood/file-directory-list/">GitHub</a>)</div>
+<div style="padding: 10px 10px 40px 10px;"><a href="http://localhost/">Back to </a><a href="http://localhost/">Localhost</a></div>
 </body>
 </html>
